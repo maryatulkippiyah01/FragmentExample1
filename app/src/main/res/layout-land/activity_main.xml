@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".MainActivity">
-    <fragment
-        android:id="@+id/fragmentbooktitle"
-        android:name="com.maryatul.fragmentexample1.BookTitle"
-        android:layout_width="0px"
+    <LinearLayout
+        android:id="@+id/fragtop"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        tools:layout="@layout/book_titles" />
-    <fragment
-        android:id="@+id/fragmentbookdescription"
-
-        android:name="com.maryatul.fragmentexample1.BookDescription"
-        android:layout_width="0px"
+        android:orientation="vertical"/>
+    <LinearLayout
+        android:id="@+id/fragbottom"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        tools:layout="@layout/book_description" />
+        android:orientation="vertical"/>
 </LinearLayout>
